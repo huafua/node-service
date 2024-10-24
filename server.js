@@ -19,9 +19,6 @@ export class Server {
         }
         this.stateManager = stateManager;
         this.dataManager = dataManager;
-        /**
-         * @type {{[key:string]:RouteCallback}}
-         */
         this.routes = {};
     }
 
@@ -33,7 +30,7 @@ export class Server {
      */
     addRoute(pathname, callback) {
         if (!callback || typeof (callback) != "function") {
-            throw "Callback must be instance of RouteCallback!";
+            throw "Callback must be a function receives SimpleRequest and SimpleResponse!";
         }
         this.routes[pathname] = callback;
         return this;
@@ -47,9 +44,6 @@ export class Server {
         http.createServer((req, res) => {
             let request = new SimpleRequest(req);
             let response = new SimpleResponse(res);
-            /**
-             * 
-             */
             let callback = this.routes[request.path];
             if (!callback) {
                 res.writeHead(404, "Not found!");
