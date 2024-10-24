@@ -41,7 +41,7 @@ export class SimpleResponse {
     }
 
     /**
-     * 設定響應類型(Content-type)
+     * 設定響應數據類型(Content-type)
      * @param {string} value content-type值
      */
     setContentType(value) {

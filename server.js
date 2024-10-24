@@ -39,8 +39,12 @@ export class Server {
     /**
      * 啓動`web`服務器
      * @param {number} port 監聽端口
+     * @param {(server)=>void}  startedCallback 啓動後回調
      */
-    start(port) {
+    start(port, startedCallback) {
+        startedCallback = startedCallback || function () {
+            console.log(`Server running at ${port}`);
+        };
         http.createServer((req, res) => {
             let request = new SimpleRequest(req);
             let response = new SimpleResponse(res);
@@ -50,8 +54,6 @@ export class Server {
                 return res.end();
             }
             callback.call(this, request, response);
-        }).listen(port, () => {
-            console.log(`Server running at ${port}`);
-        });
+        }).listen(port, startedCallback.bind(this));
     }
 }

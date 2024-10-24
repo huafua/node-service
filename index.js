@@ -37,4 +37,6 @@ server.addRoute("/example", function (req, res) {
 }).addRoute("/get", function (req, res) {
     console.log(req.query);
     res.json({ success: true, message: "gotcha", query: req.query, headers: req.headers });
-}).start(PORT);
+}).start(PORT,function(){
+    console.log(this);
+});
