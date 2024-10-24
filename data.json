@@ -1,0 +1,68 @@
+[
+    {
+      "id": "f629ef1c-6550-43da-8b98-d78f3cbde309",
+      "username": "Alice",
+      "gender": "male",
+      "age": 37
+    },
+    {
+      "id": "0564d27d-6f9c-440d-970d-8ab07ab7bb4a",
+      "username": "Bruce",
+      "gender": "male",
+      "age": 26
+    },
+    {
+      "id": "5a4a3aad-7de9-4f1d-97a5-4147aa1c9dc2",
+      "username": "Chris",
+      "gender": "female",
+      "age": 22
+    },
+    {
+      "id": "905e2a67-b23b-4457-97fd-f8cc2b2577bb",
+      "username": "Daniel",
+      "gender": "male",
+      "age": 37
+    },
+    {
+      "id": "b9a0d6a6-ffd5-45e1-ac10-c94ae6dac3cc",
+      "username": "Emma",
+      "gender": "female",
+      "age": 21
+    },
+    {
+      "id": "001d1191-f4e2-4c30-95cf-3c4b99d96ce3",
+      "username": "Frank",
+      "gender": "male",
+      "age": 33
+    },
+    {
+      "id": "f384fb7d-b64b-401e-a0e3-6391058aee9e",
+      "username": "Grace",
+      "gender": "male",
+      "age": 32
+    },
+    {
+      "id": "c011041c-4120-45aa-82c9-5b330f22aba3",
+      "username": "Issac",
+      "gender": "male",
+      "age": 27
+    },
+    {
+      "id": "133da376-4dc0-4f25-be44-23241efa4855",
+      "username": "Henry",
+      "gender": "male",
+      "age": 22
+    },
+    {
+      "id": "62cfcfdd-c980-4dc4-a605-977212f7445c",
+      "username": "Samuel",
+      "gender": "male",
+      "age": 23
+    },
+    {
+      "id": "86088c5f-7e40-45af-a8bf-8416a1cbb418",
+      "username": "White",
+      "gender": "male",
+      "age": 33
+    }
+]
