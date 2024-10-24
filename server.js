@@ -28,7 +28,7 @@ export class Server {
     /**
      * 添加路由
      * @param {string} pathname 路由路徑
-     * @param {RouteCallback} callback 路由回調
+     * @param {(req:SimpleRequest,res:SimpleResponse)=>void} callback 路由回調
      * @returns {Server}
      */
     addRoute(pathname, callback) {
